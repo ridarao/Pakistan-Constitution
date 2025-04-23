@@ -14,7 +14,7 @@ def load_embedding_model():
 
 embedding_model = load_embedding_model()
 
-GROQ_API_KEY = os.getenv["GROQ_API_KEY"]
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 def extract_text_from_pdf(uploaded_file):
     doc = fitz.open(stream=uploaded_file.read(), filetype="pdf")
